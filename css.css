@@ -1,0 +1,266 @@
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+/* Navigage*/
+  ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #222222;
+  }
+  li {
+    float: left;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  li a:hover {
+    background-color: #d58a00;
+  }
+/* Uvodni obrazek a text */
+ .uvodni > img {
+      width: 100%;
+      filter: brightness(50%);
+  }
+  .UvodniNadpis {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 70px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+/* Uvodni text - o restauraci */
+.flex {
+    display: flex;
+    justify-content: center;
+    margin: 120px 0 120px 0;
+}
+.FlexObrazek {
+    width: 400px;
+}
+.text {
+  margin-top: 20px;
+}
+  .text,.text2 {
+      margin-left: 30px;
+      width: 25%;
+  }
+  .text,text2 > h2 {
+      margin-bottom: 10px;
+  }
+/* Týdenní nabídka*/
+.container {
+    background-color: #222222;
+    height: 470px;
+    margin-bottom: 80px;
+}
+.flex2 {
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.flex2 > div {
+    width: 300px;
+    height: 300px;   
+}
+h3 {
+    margin: 10px;
+    text-decoration: underline #d58a00 solid;
+    text-underline-offset: 4px;
+}
+.bilih1 {
+    color: white;
+    text-align: center;
+    padding: 50px 0 40px 0;
+}
+.obrazek {
+    width: 90%; 
+    display: block;
+    margin: auto;
+}
+/*Rozvoz - úvodní stránka*/
+.text2 {
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+/*Footer*/
+footer {
+    color: white;
+    background-color: #2f2f2f;
+    height: 320px;
+}
+table, td, th {  
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 10px;
+    margin: auto;
+  }
+  .footer {
+      display: flex;
+      justify-content: space-between;
+  }
+  .footer > div {
+    padding-top: 50px;
+    width: 33%;
+    text-align: center; 
+  }
+  .copy {
+      text-align: center;
+      margin: auto;
+      margin-top: 60px;
+      color: #8e8e8e;
+  }
+  /*Jídelní lístek*/
+  .listek {
+    margin: auto;
+    width: 50%;
+  }
+  .listek > table {
+    width: 100%;
+  }
+  .listek, table, tr, td {
+    border-color: #d58a00 ;
+  }
+  .listek > h2 {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 300;
+  }
+  .listek > table:last-child {
+    margin-bottom: 80px;
+  }
+  /*Stránka - kontakty*/
+  .kontakty {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+ /*o nás*/
+ article {
+   margin: auto;
+   width: 50%;
+   text-align: center;
+   margin-top: 80px;
+   margin-bottom: 80px;
+ }
+ .interier {
+   display: inline;
+ }
+ .interier > img {
+   width: 33%;
+   margin-bottom: 80px;
+ }
+ /*Rozvor - stránka*/
+ .rozvoz > img{
+  width: 50%;
+  margin-top: 30px;
+ }
+ @media screen and (max-width: 1200px) {
+  .UvodniNadpis {
+    top: 30%;
+    font-size: 55px;
+  }
+  .text, .text2 {
+    margin-top: 0px;
+  }
+ }
+ @media screen and (max-width: 960px)  {
+  .UvodniNadpis {
+    top: 25%;
+    font-size: 45px;
+  }
+  .flex {
+     display: block;
+    margin: 80px 0 80px 0;
+   }
+   .flex > div {
+     margin-right: auto;
+     margin-left: auto;
+     text-align: center;
+   }
+   .FlexObrazek {
+     display: block;
+     margin: auto;
+     margin-bottom: 40px;
+   }
+   .text, .text2 {
+     width: 40%;
+   }
+   .text2 {
+     margin-bottom: 40px;
+   }
+   iframe {
+     width: 500px;
+     height: 350px;
+   }
+   }
+   @media only screen and (max-width: 780px) {
+    .UvodniNadpis {
+      top: 25%;
+      font-size: 35px;
+    }
+    .text, .text2 {
+      width: 55%;
+    }
+    .container {
+      height: 1050px;
+    }
+    .flex2 {
+      display: block;
+    }
+    .flex2 > div {
+      margin: auto;
+    }
+    article {
+      width: 60%;
+    }
+    .interier {
+      display: block;
+      width: 70%;
+      margin: auto;
+      margin-bottom: 60px;
+    }
+    .interier > img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    iframe {
+      width: 400px;
+      height: 250px;
+    }
+    footer {
+      height: 600px;
+    }
+    .footer {
+      display: block;
+    }
+    .footer > div {
+      margin: auto;
+    }
+   }
+   @media only screen and (max-width: 680px) {
+    footer {
+      height: 740px;
+    }
+   }
