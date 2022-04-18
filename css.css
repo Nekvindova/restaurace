@@ -263,4 +263,11 @@ table, td, th {
     footer {
       height: 740px;
     }
+    .UvodniNadpis {
+      font-size: 25px;
+    }
+     @media only screen and (max-width: 360px) {
+    .UvodniNadpis {
+      font-size: 20px;
+    }
    }
